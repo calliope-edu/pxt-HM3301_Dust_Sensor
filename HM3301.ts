@@ -15,22 +15,22 @@ enum DustValues {
 
 namespace HM3301 {
     let ADDRESS = 0x40;
-
-    /**
-     * Init
-     */
-    //% blockId=HM3301_init
-    //% block="Initialize the sensor"
-    export function init() {
-        
-    }
-
     /**
      * Read Dust Value
      */
     //% blockId=HM3301_read_value
     //% block="Read dust value %i "
-    export function readDustValue(i: DustValues) {
+    export function readDustValue(i: DustValues):void {
         
     }
+    /**
+     * Init
+     */
+    //% blockId=HM3301_init
+    //% block="Initialize the sensor"
+    export function init():void {
+        
+    }
+
+
 }
