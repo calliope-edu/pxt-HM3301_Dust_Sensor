@@ -1,0 +1,17 @@
+{
+    "name": "pxt-HM3301",
+    "version": "0.0.1",
+    "description": "I2C dust detection sensor",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "HM3301.ts"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/calliope-edu/ptx-HM3301"
+    },
+    "public": true
+}
