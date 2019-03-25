@@ -16,7 +16,7 @@ enum DustValues {
 namespace HM3301 {
     let ADDRESS = 0x40;
 
-    function checkReceived(buf: Buffer): boolean {
+    function checksum(buf: Buffer): boolean {
         if (buf.length != 29) {
             return false
         }
@@ -47,14 +47,16 @@ namespace HM3301 {
     export function readDustValue(i: DustValues): number {
         // read 29 bytes from the sensor
         let bytes = readBytes(29)
-        if (!checkReceived(bytes)) {
-            // Error Value
+        if (bytes.length != 29) {
+            return -1
+        }
+        if (!checksum(bytes)) {
             return -1
         }
         let value = bytes[i * 2] << 8 | bytes[i * 2 + 1]
         return value
     }
-    
+
     /**
      * Init
      */
