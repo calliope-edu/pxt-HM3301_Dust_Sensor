@@ -32,7 +32,7 @@ namespace HM3301 {
     }
 
     function readBytes(num: number) {
-        let buf = pins.i2cReadBuffer(ADDRESS, num, true)
+        let buf: Buffer = pins.i2cReadBuffer(ADDRESS, num, true)
         if (buf.length != num) {
             return []
         }
