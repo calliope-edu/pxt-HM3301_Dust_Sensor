@@ -1,7 +1,7 @@
 {
-    "name": "pxt-HM3301",
+    "name": "Dust-Sensor",
     "version": "0.0.1",
-    "description": "I2C dust detection sensor",
+    "description": "HM3301 I2C dust detection sensor",
     "license": "MIT",
     "dependencies": {
         "core": "*"
