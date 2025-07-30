@@ -63,7 +63,7 @@ The **HM3301** communicates via the A0 Grove connector on the Calliope mini usin
 
 ## Supported targets
 
-* OXT/calliopemini
+* PXT/calliopemini
   
 ## License
 
