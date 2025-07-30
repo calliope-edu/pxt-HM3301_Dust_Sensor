@@ -29,18 +29,6 @@ Der **HM3301** kommuniziert über den A0 Grove-Konnektors des Calliope mini (I2C
 
 ---
 
-## 🧪 Beispielcode (Blocks)
-
-```blocks
-basic.forever(function () {
-    hm3301.updateData()
-    serial.writeLine("PM1.0: " + hm3301.pm1() + " µg/m³")
-    serial.writeLine("PM2.5: " + hm3301.pm25() + " µg/m³")
-    serial.writeLine("PM10: " + hm3301.pm10() + " µg/m³")
-    basic.pause(1000)
-})
-```
-
 
 
 # HM3301 Dust Sensor MakeCode Extension
@@ -71,18 +59,6 @@ The **HM3301** communicates via the A0 Grove connector on the Calliope mini usin
 | SCL        | SCL                          |
 
 ---
-
-## 🧪 Example Code (Blocks)
-
-```blocks
-basic.forever(function () {
-    hm3301.updateData()
-    serial.writeLine("PM1.0: " + hm3301.pm1() + " µg/m³")
-    serial.writeLine("PM2.5: " + hm3301.pm25() + " µg/m³")
-    serial.writeLine("PM10: " + hm3301.pm10() + " µg/m³")
-    basic.pause(1000)
-})
-```
 
 
 ## Supported targets
